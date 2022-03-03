@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Car Repair</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/popUp.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.7.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script>
+$(document).ready(function () {
+    $('.slider')._TMS({
+        show: 0,
+        pauseOnHover: true,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 500,
+        preset: 'fade',
+        pagination: true, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: 'fromBottom', // fromLeft, fromRight, fromTop, fromBottom
+        waitBannerAnimation: false,
+        progressBar: false
+    })
+})
+$(function () {
+    if ($(window).width() <= 1066) {
+        $("#slider .prev").css("left", "55px")
+        $("#slider .next").css("right", "55px")
+    }
+})
+</script>
+<!--[if lt IE 9]>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/html5.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+<div class="bg">
+  <header>
+    <div class="main wrap">
+      <h1><a href="index.html">
+        <h1 class="logo-text">Top Autos</h1>
+        <!-- <img src="images/logo.png" alt=""></a> -->
+      </h1>
+      <p>Consesionaria de autos nuevos y usados<span>987 654 321</span></p>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a class="toFix" href="about.html">Inicio</a></li>
+        <li><a href="#">Promociones</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Autos</a></li>
+        <li><a href="#">Contactanos</a></li>
+      </ul>
+      <div class="clear"></div>
+    </nav>
+  </header>
+  <div id="slider">
+    <div class="slider-block">
+      <div class="slider">
+        <ul class="items">
+          <li><img src="images/slide-1.jpg" alt="">
+            <div class="banner">
+              <div><span>Ford</span><strong>Сiriure dolor nhendrerit</strong>
+                <p>Nam liber tempor cum soluta nobis eleifenoption congue nigfif аil imperdiet doming id quod mazim placerat facer. Lorjem ipsum dolor sit amet, consecer adipiscing elit.</p>
+                <a href="#" class="button">Comprar Auto</a></div>
+            </div>
+          </li>
+          <li><img src="images/slide-2.jpg" alt="">
+            <div class="banner">
+              <div><span>Maserati GT</span><strong>Vulputate velit esse</strong>
+                <p>sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
+                <a href="#" class="button">Comprar Auto</a></div>
+            </div>
+          </li>
+          <li><img src="images/slide-3.jpg" alt="">
+            <div class="banner">
+              <div><span>Honda HSC</span><strong>Molestie consequat vel</strong>
+                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <a href="#" class="button">Comprar Auto</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="prev"></a> <a href="#" class="next"></a> </div>
+  </div>
+
+  <section id="content">
+    <div class="block-1 box-1">
+      <div> <img class="full" src="https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_8cd5f16240754200b016b856b9e0ec40.jpg" alt="">
+        <p class="text-1">BMW</p>
+        <p class="upper">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in optio atque facere porro amet ex sunt non ipsa tempora.</p>
+        <a href="#" class="button">Comprar auto</a> </div>
+      <div> <img class="full" src="https://cars.usnews.com/static/images/Auto/izmo/i31351528/2017_audi_r8_angularfront.jpg" alt="">
+        <p class="text-1">Audi</p>
+        <p class="upper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure quam blanditiis commodi eaque fuga itaque cum officiis sint labore.</p>
+        <a href="#" class="button">Comprar auto</a> </div>
+      <div> <img class="full" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/compositor-1623493959.jpg?crop=0.746xw:0.661xh;0.140xw,0.214xh&resize=1200:*" alt="">
+        <p class="text-1">Ford</p>
+        <p class="upper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, culpa! Doloribus quas dolor quis excepturi sequi eveniet error odit perferendis!</p>
+        <a href="#" class="button">Comprar auto</a> </div>
+      <div class="last"> <img class="full" src="https://autoland.com.pe/wp-content/uploads/2020/01/d.jpg" alt="">
+        <p class="text-1">Toyota</p>
+        <p class="upper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis quas eaque iusto nesciunt, quasi quisquam expedita sint quibusdam quis!</p>
+        <a href="#" class="button">Comprar auto</a> </div>
+    </div>
+    
+  </section>
+  <!-- <button id="toOpen" class="flotante">PopUp</button> -->
+  <div class="Click-here botButtom"><img src="svg/chat.svg"> </div>
+  <footer>Trabajo realizado por el <strong>grupo 4</strong> 🥳🤓</footer>
+  
+<div class="custom-model-main">
+    <div class="custom-model-inner">        
+    <div class="close-btn">×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+              <iframe src='https://webchat.botframework.com/embed/qnaconcesionariaenNew-bot?s=NtEblPH_jEE.ioGbNH7d6vlJKlj7n_ZDMO4Kt34qo8OiJnG_HqlYJDE'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+            </div>
+        </div>  
+    </div>  
+    <div class="bg-overlay"></div>
+</div> 
+</div>
+</body>
+<script>
+  $(".Click-here").on('click', function() {
+    $(".custom-model-main").addClass('model-open');
+  }); 
+  $(".close-btn, .bg-overlay").click(function(){
+    $(".custom-model-main").removeClass('model-open');
+  });
+</script>
+</html>
