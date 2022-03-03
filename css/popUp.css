@@ -155,3 +155,9 @@ footer{
 footer > strong {
   color: rgb(130, 0, 0);
 }
+.lista-miembros{
+  margin-top: 20px;
+}
+.miembro{
+  font-size: 0.8em;
+}
